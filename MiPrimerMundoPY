@@ -1,0 +1,25 @@
+'''Descripcion: El robot arranca con una banana 
+en la posicion (1,1) y el objetivo es que llegue a la 
+posicion (1,5) donde se encuentra una manzana la recoge
+deja la banana y vuelve a la posicion de origen'''
+#Autor: Juan
+#Fecha: 29/07/2019
+print ("Hola soy Reeborg")
+print("La mision va a comenzar ")
+
+repeat 4:
+    move()
+repeat 2:
+    turn_left()
+take()
+pause()
+put("banana")
+pause()
+repeat 4:
+    move()
+put("apple")
+print("La mision fue cumplida")
+
+
+
+    
