@@ -1,0 +1,29 @@
+'''Descripcion: Se realizaron 2 actividades una que camina
+ en linea recta y otra en zigzag 
+ 1. El robot camina en un mundo de 5x5
+Funcionalidad
+Pre: Reeborg esta en (1,1)
+Pos: Termina en (5,1) || Reeborg esta en (1,5)
+Autor: Juan
+Fecha: 29/07/2019
+#print ("Hola soy Reeborg")
+#print("La mision va a comenzar ")
+def walk():
+    if front_is_clear():
+        repeat 4 :
+            move()
+#llamado de la funcion 
+walk()'''
+'''
+Funcionalidad
+Pre: Reeborg esta en (1,1) && Reeborg camina hacia el Norte
+Pos: Termina en (5,5)'''
+def zigzag():
+    repeat 4 :
+        move()
+        repeat 3 :
+            turn_left()
+        move()
+        turn_left()
+        
+zigzag() 
